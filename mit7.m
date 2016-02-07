@@ -1,3 +1,4 @@
+%MIT OpenCourseWare
 %Find function
 
 %wektor 
