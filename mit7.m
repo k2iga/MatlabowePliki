@@ -2,14 +2,15 @@
 %Find function
 
 %wektor 
-x=0:1:100;
+size=100;
+x=0:1:size;
 %indices-wskaŸniki
 inds= find(x>40 & x<60);
 disp(inds);
 
 %Aim is to find how many values/entries of x are positive?
 
-x=sin(linspace(0,10*pi,100));
+x=sin(linspace(0,10*pi,size));
 %zliczam
 count=0;
 
@@ -27,8 +28,8 @@ count=length(find(x>0));
 %       a=rand(1,100);
 %       b=[0 a(1:end-1)]+a;
     %alternative, longer version - slow and complicated
-    a=rand(1,100);
-    b=zeros(1,100);
+    a=rand(1,size);
+    b=zeros(1,size);
     for n=1:100
         if n==1
             b(n)=a(n);
