@@ -25,7 +25,7 @@ count=length(find(x>0));
 %       disp(x(60));
       
       %To sum up every two consecutive (kolejny, seryjny) terms: 
-%       a=rand(1,100);
+%       a=rand(1,size);
 %       b=[0 a(1:end-1)]+a;
     %alternative, longer version - slow and complicated
     a=rand(1,size);
